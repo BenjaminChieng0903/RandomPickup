@@ -1,0 +1,44 @@
+.MainPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 水平居中所有generateContainer */
+  flex-wrap: wrap; /* 如果容器宽度不足以容纳所有generateContainer，则换行 */
+}
+
+.generateContainer {
+  display: flex;
+  justify-content: center; /* 水平排列内部子元素 */
+  align-items: center; /* 垂直居中内部子元素 */
+  margin: 40px; /* 可选：设置generateContainer之间的间距 */
+  padding: 10px; /* 可选：设置generateContainer的内边距 */
+  border: 1px solid #ccc; /* 可选：为generateContainer添加边框 */
+}
+
+.child {
+  margin: 80px; /* 可选：设置子元素之间的间距 */
+  font-size: larger;
+  font-weight: bold;
+}
+.button {
+  margin: 10px; /* 设置按键之间的间距 */
+  padding: 15px 25px; /* 按键内边距 */
+  background-color: #007bff; /* 按键背景颜色 */
+  color: white; /* 按键文字颜色 */
+  border: none; /* 去除按键边框 */
+  border-radius: 4px; /* 按键圆角 */
+  font-size: 16px; /* 按键文字大小 */
+  cursor: pointer; /* 鼠标悬停时显示指针 */
+  transition: background-color 0.3s, transform 0.3s; /* 过渡效果 */
+}
+.button.stop {
+  background-color: red;
+}
+.button:hover {
+  background-color: #0056b3; /* 悬停时的背景颜色 */
+  transform: translateY(-2px); /* 悬停时的位移效果 */
+}
+
+.button:active {
+  background-color: #004080; /* 按下时的背景颜色 */
+  transform: translateY(2px); /* 按下时的位移效果 */
+}
